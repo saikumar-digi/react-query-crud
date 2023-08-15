@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 
-const PostForm = ({onSubmit}) => {
+const UserForm = ({onSubmit,initialData}) => {
 
+    console.log(initialData);
     const [user, setUser] = useState({
-        name: "",
-        location: "",
+        name: initialData.name || "",
+        location: initialData.location || ""
     })
 
 
@@ -46,4 +47,4 @@ const PostForm = ({onSubmit}) => {
         </div>
     )
 }
-export default PostForm
+export default UserForm

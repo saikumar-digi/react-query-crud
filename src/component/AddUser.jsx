@@ -1,10 +1,10 @@
 import React from 'react'
-import PostForm from './PostForm'
+import PostForm from './UserForm'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { createUser } from '../api/serverController';
 import { v4 as uuidv4 } from 'uuid';
 
-const AddPost = () => {
+const AddUser = () => {
 
     const queryClient = useQueryClient()
 
@@ -24,9 +24,9 @@ const AddPost = () => {
 
   return (
     <div>
-    <PostForm onSubmit={handleAddUser}/>
+    <PostForm onSubmit={handleAddUser} initialData={{}}/>
     </div>
   )
 }
 
-export default AddPost
+export default AddUser

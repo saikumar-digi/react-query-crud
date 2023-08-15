@@ -12,3 +12,23 @@ export async function createUser(newUser) {
     });
     return response.json();
 }
+export async function updatedUser(updatedUser) {
+    const response = await fetch(`http://localhost:3000/Users/${updatedUser.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(updatedUser)
+    });
+    return response.json();
+}
+export async function getUserById(id) {
+    const response = await fetch(`http://localhost:3000/users/${id}`)
+    return response.json();
+}
+export async function deleteUser(id) {
+    const response = await fetch(`http://localhost:3000/users/${id}`, {
+        method: "DELETE",
+})
+    return response.json();
+}

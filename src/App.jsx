@@ -1,18 +1,18 @@
 import { Route, Routes } from "react-router-dom"
-import PostList from "./pages/UserList"
-import Post from "./pages/User"
-import PostEdit from "./pages/UserEdit"
-
+import UserEdit from "./pages/UserEdit"
+import UserList from "./pages/UserList"
+import User from "./pages/User"
+import Count from "./pages/Count"
 
 
 function App() {
   return (
     <div>
-    <h1>hii</h1>
+    <h1>First App   <Count/></h1>
     <Routes>
-      <Route path="/" element={<PostList />}/>
-      <Route path="/user/:id" element={<Post />}/>
-      <Route path="/user/:id/edit"  element={<PostEdit />}/>
+      <Route path="/" element={<UserList />}/>
+      <Route path="/user/:id" element={<User />}/>
+      <Route path="/user/:id/edit"  element={<UserEdit />}/>
     </Routes>
  </div>
     

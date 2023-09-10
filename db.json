@@ -1,3 +1,29 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "ec4c1425-f68e-44a7-b741-9d263faab361",
+      "name": "Rudresh",
+      "location": "BIdar"
+    },
+    {
+      "id": "5a588f14-bf09-4f6e-bce0-f01a754cfdaa",
+      "name": "ahsda",
+      "location": "Benga"
+    },
+    {
+      "id": "76f68afd-c78e-40cc-90c4-b3be21da915a",
+      "name": "Md",
+      "location": "Pakkishr"
+    },
+    {
+      "id": "31bb455d-c22c-4626-bddb-88a78abe270b",
+      "name": "sao",
+      "location": "bomam"
+    },
+    {
+      "id": "31426a5e-a67d-4ff4-bac5-b3bb8cc31141",
+      "name": "asds",
+      "location": "dssad"
+    }
+  ]
 }

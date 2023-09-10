@@ -13,6 +13,7 @@ const {isLoading,isError,data:users,error} = useQuery({
   queryKey:["users"],
   queryFn: getAllUserData
 })
+
 const deleteuserMutation = useMutation({
   mutationFn: deleteUser,
   onSuccess: () => {

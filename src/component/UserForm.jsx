@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 
 const UserForm = ({onSubmit,initialData}) => {
 
-    console.log(initialData);
     const [user, setUser] = useState({
         name: initialData.name || "",
         location: initialData.location || ""
